@@ -21,7 +21,8 @@ app = FastAPI()
 # Enable CORS - Update this with your frontend URL if needed
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://code-evaluator-frontend.vercel.app/" ,"http://localhost:3000","*"],  # Add your frontend URL
+    # allow_origins=["https://code-evaluator-frontend.vercel.app/" ,"http://localhost:3000","*"],  # Add your frontend URL
+    allow_origins=["https://evaluator-dusky.vercel.app", "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
